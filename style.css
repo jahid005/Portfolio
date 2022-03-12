@@ -1,0 +1,73 @@
+/* bassic css */
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width:100%;
+}
+a{
+    text-decoration:none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+/* header-info */
+h1{
+    font-size:30px;
+}
+.name_highligt{
+    color:rgb(255, 170, 11);
+}
+
+.header{
+    background:url(./img/top-banner.png);
+    background-repeat:no-repeat;
+    height: 400px;
+    padding:20px;
+}
+.header-top{
+    width: 40%;
+    float: left;
+    padding-left:5%;
+    margin-left:2%;
+}
+/* Button */
+.hire-button{
+    font-weight:700;
+    padding:10px 20px;
+    /* border-radius:5px; */
+    position: relative;
+    z-index:1;
+    border-bottom:1px solid rgba(250,110,90,1);
+        
+}
+.hire-button:hover{
+    color: #fff;
+    border-bottom:none; 
+    transition:.99s;
+}
+.hire-button::after{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    height: 43px;
+    width: 0;
+    border-radius:5px;
+    color:#fff;
+    background: rgb(154,76,134);
+    background: linear-gradient(37deg, rgba(154,76,134,1) 12%, rgba(250,110,90,1) 69%);
+    z-index:-1;
+}
+.hire-button:hover::after{
+    width:101px;
+    transition:.90s;
+
+}
+
+.header-top p{
+    margin-bottom: 50px;
+}
