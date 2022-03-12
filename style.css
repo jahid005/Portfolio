@@ -34,6 +34,9 @@ h1{
     padding-left:5%;
     margin-left:2%;
 }
+.header-top h3{
+    margin-top:40px;
+}
 /* Button */
 .hire-button{
     font-weight:700;
@@ -69,5 +72,5 @@ h1{
 }
 
 .header-top p{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
