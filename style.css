@@ -10,38 +10,58 @@ a{
     text-decoration:none;
 }
 
+p{
+    margin:23px 0;
+    color:rgb(82, 79, 79);
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 
+}
+section{
+    height: 450px;
 }
 /* header-info */
 h1{
     font-size:30px;
 }
-.name_highligt{
-    color:rgb(255, 170, 11);
+.orange_highligt{
+    /* color:rgb(255, 170, 11); */
+    color:blueviolet;
 }
-
+/* Animation */
+.name{
+    width:70px;
+    height:2px;
+    position: relative;
+    background:rgb(255, 170, 11);
+    animation:mymove 5s infinite;
+    animation-timing-function: ease;
+}
+@keyframes mymove {
+    from{left: 0px;}
+    to{left:158px;}
+    
+}
 .header{
     background:url(./img/top-banner.png);
     background-repeat:no-repeat;
-    height: 400px;
     padding:20px;
 }
-.header-top{
+.half-width{
     width: 40%;
     float: left;
     padding-left:5%;
-    margin-left:2%;
+    margin-left:2%; 
 }
-.header-top h3{
+.half-width h3{
     margin-top:40px;
 }
 /* Button */
 .hire-button{
     font-weight:700;
     padding:10px 20px;
-    /* border-radius:5px; */
     position: relative;
     z-index:1;
     border-bottom:1px solid rgba(250,110,90,1);
@@ -66,11 +86,47 @@ h1{
     z-index:-1;
 }
 .hire-button:hover::after{
-    width:101px;
+    width:100%;
     transition:.90s;
 
 }
 
-.header-top p{
-    margin-bottom: 30px;
+/* dream-section */
+.dream-section{
+    background:url(./img/dream-bg.png);
+    background-repeat:no-repeat;
+    background-position:right;
+    padding: 20px;
+}
+/* experience-section */
+.experience-box{
+    box-shadow:10px 10px 25px gray;
+    border-radius:5px;
+    height:60%;
+    padding: 6px 5px;
+    box-sizing: border-box;
+}
+.experience-section{
+    background:url(./img/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 20px;
+}
+#full-stack{
+    border-left:7px solid;
+    border-image:linear-gradient(180deg,lightSalmon,tomato);
+    border-image-slice:1;
+    margin-left: 69px;
+}
+#baby-web{
+    border-left:7px solid;
+    border-image:linear-gradient(180deg,blue,cyan);
+    border-image-slice:1;
+}
+
+.footer-section{
+    height:0;
+}
+footer p{
+    text-align: center;
 }
